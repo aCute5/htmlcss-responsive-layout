@@ -41,9 +41,9 @@ html{
 }
 
 .nav-top .hamburger{
-    /* display: none; */
-    font-size: 1.5em;
-    color: white;
+     font-size: 1.5em;
+     color: white;
+   
 }
 @media screen and (min-width:811px) {
     .hamburger{
@@ -125,12 +125,17 @@ html{
 }    
    
 .bluecard-big .phone{
-        flex-basis: 30%;
+        flex-basis: 40%;
+        flex-grow: 0;
+        position: relative;
+        
+        right: 0;
+       
 }
 .bluecard-big img{
-        max-width: 40%;
-        position: absolute;
-        bottom: 0;
+    width:100%;
+    position: absolute;
+    bottom: -1rem;    
 }     
 .blue-section .bluecards{
     flex-basis: 30%;
@@ -160,7 +165,7 @@ html{
     row-gap: 1rem;
 }
 .planning1 img{
-    max-width: 60%;
+    max-width: 80%;
 }
 .planning2 img{
     max-width: 60%;
@@ -275,6 +280,7 @@ html{
     text-align: center;
     letter-spacing: 2px;
 }
+/* about us */
 .about-us .container{
     max-width: 1100px;
     display: flex;
@@ -335,6 +341,7 @@ html{
         right: 3rem;
         color: rgb(151, 146,228);
 }
+/* purple section 3 */
 .purple-section-3{
         background-color:  rgb(151, 146,228);
 }
@@ -377,6 +384,7 @@ html{
     text-decoration: underline white;
     
 }
+/* blackfooter */
 footer{
     background-color: rgb(51, 51, 51) ;
     
@@ -388,6 +396,74 @@ footer{
     padding: 1rem;
     color: white;
 }
+@media screen and (max-width: 375px) {
+        .nav-top .hamburger{
+            flex-basis: 10%;
+        }
+      
+        .blue-section .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .blue-section .bluecard-big{
+            /* flex-basis: 63%;
+            background-color: rgb(181, 221, 255);
+            border-radius: 2rem;
+            padding: 1rem;
+            line-height: 2rem;
+            display: flex; */
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2rem;
+            /* position: relative; */
+        }
+        .bluecard-big .phone{
+            margin-bottom: -1.7rem;
+        }
+        .bluecard-big img{
+            width:100%;
+            position: static;
+         }
+         .purple-section .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .purple-section .planning1 {
+            flex-basis: 80%;
+        }
+       .purple-cards{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .purple.cards img,div{
+            flex-basis: 100%;
+        }
+        .purple-section-2 .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .about-us .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+         }        
+        
+        .purple-section-3 .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }      
+}                
+        
+            
+       
+        
+               
+           
+       
 
         
 
