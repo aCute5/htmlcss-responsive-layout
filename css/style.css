@@ -227,13 +227,10 @@ html{
     
 }
 .container .purple-cards img{
-    width: 50%;
-    border-radius: 50%;
-    height: 11rem;
-    overflow: hidden;
-    object-fit: cover;
-    
+        clip-path: circle(35%);
+        width: 100%;
 }
+
 /* second section Purple */
 .purple-section-2{
     background-color: rgb(151, 146,228);
@@ -398,7 +395,46 @@ footer{
     padding: 1rem;
     color: white;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width:810px) {
+        .blue-section .bluecard-big{
+            flex-basis: 65%;
+            flex-direction: column;
+        }
+        .blue-section .bluecards{
+            flex-direction: column;
+            flex-basis: 30%;
+        }
+        .bluecard-big .phone{
+            margin-bottom: -1.7rem;
+        }
+        .bluecard-big img{
+            width:80%;
+            position: static;
+         }
+         .purple-section .container,
+         .purple-section-3 .container{
+            flex-direction: column;
+         }
+       
+        .purple-section-2 .container{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 100%;
+            
+            
+        }
+        .purple-section-2 .white-cards{
+            width: 50%;
+         }    
+            
+
+           
+       
+         
+            
+    
+}
+@media screen and (max-width: 600px) {
         .nav-top .hamburger{
             flex-basis: 10%;
         }
@@ -470,7 +506,14 @@ footer{
             font-size: 4rem;
             color: rgb(253, 193, 95);
             line-height: 6rem;
-    }        
+         }
+         .about-us .container{
+            gap: 2rem;
+         }
+        .container .purple-cards img{
+            clip-path: circle(35%);
+            
+         }      
        
 }                
         
