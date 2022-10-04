@@ -321,7 +321,7 @@ html{
         width: 100%;
         text-align: start;
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 0.7rem;
         
 }
 .about-us a{
@@ -330,6 +330,8 @@ html{
 .about-us img{
         width: 80%;
         border-radius: 50%;
+        object-fit: contain;
+        overflow: hidden;
 }
 .img{
     position: relative;
@@ -455,7 +457,21 @@ footer{
             flex-direction: column;
             flex-wrap: wrap;
             width: 100%;
-        }      
+        }
+        .btn-purple{
+            font-size: 0.8rem;
+        }
+        .bluecard-big a{
+            margin: auto;
+            font-size: .9rem;
+            padding: .5rem;
+         }
+         .purple-section-3 h1{
+            font-size: 4rem;
+            color: rgb(253, 193, 95);
+            line-height: 6rem;
+    }        
+       
 }                
         
             
