@@ -358,6 +358,9 @@ html{
         color: rgb(253, 193, 95);
         line-height: 7rem;
 }
+.purple-section-3 h2{
+        color: white;
+}
 .purple-section-3 p{
     color: white;
     line-height: 2rem;
@@ -397,41 +400,41 @@ footer{
 }
 @media screen and (max-width:810px) {
         .blue-section .bluecard-big{
-            flex-basis: 65%;
+            flex-basis: 60%;
             flex-direction: column;
         }
-        .blue-section .bluecards{
+        .bluecards{
             flex-direction: column;
-            flex-basis: 30%;
+            flex-basis: 35%;
         }
         .bluecard-big .phone{
             margin-bottom: -1.7rem;
         }
         .bluecard-big img{
-            width:80%;
+            width:100%;
             position: static;
          }
-         .purple-section .container,
-         .purple-section-3 .container{
+         .purple-section .container{
             flex-direction: column;
          }
-       
-        .purple-section-2 .container{
+         .partners .container{
             flex-direction: column;
-            flex-wrap: nowrap;
+         }
+         .partners .purple-cards{
+            padding: 1rem;
+         }
+         .partners .purple-cards img{
             width: 100%;
-            
-            
-        }
-        .purple-section-2 .white-cards{
-            width: 50%;
-         }    
-            
+         }
+         .purple-section-2 .white-cards{
+            flex-basis: 45%;
+         }
+         .about-us .linkedin{
+            flex-basis: 50%;
+         }
 
-           
-       
-         
             
+        
     
 }
 @media screen and (max-width: 600px) {
